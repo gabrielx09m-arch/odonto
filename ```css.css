@@ -1,0 +1,668 @@
+/* =====================================
+   CONFIGURAÇÕES
+===================================== */
+
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: aliceblue;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* =====================================
+   CABEÇALHO
+===================================== */
+
+.cabeçalho {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 18px 7%;
+
+    background-color: white;
+
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+
+/* LOGO */
+
+.logo {
+    color: cadetblue;
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #333;
+}
+
+
+/* MENU */
+
+.menu ul {
+    display: flex;
+    align-items: center;
+
+    gap: 30px;
+
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu a {
+    color: #444;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: cadetblue;
+}
+
+
+/* BOTÃO MOBILE */
+
+.menu-btn {
+    display: none;
+
+    border: none;
+    background: none;
+
+    color: cadetblue;
+    font-size: 30px;
+
+    cursor: pointer;
+}
+
+
+/* =====================================
+   HERO
+===================================== */
+
+.hero {
+    min-height: 560px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 70px 8%;
+
+    background:
+        linear-gradient(
+            120deg,
+            aliceblue,
+            white
+        );
+}
+
+.hero-texto {
+    max-width: 600px;
+}
+
+.destaque,
+.pequeno-titulo {
+    color: cadetblue;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.hero h1 {
+    margin: 18px 0;
+
+    font-size: 48px;
+    line-height: 1.15;
+
+    color: #333;
+}
+
+.hero h1 strong {
+    display: block;
+    color: cadetblue;
+}
+
+.hero p {
+    max-width: 520px;
+
+    font-size: 18px;
+    line-height: 1.7;
+
+    color: #666;
+}
+
+
+/* IMAGEM/ILUSTRAÇÃO */
+
+.hero-imagem {
+    width: 350px;
+    aspect-ratio: 1 / 1;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+
+    border-radius: 50%;
+
+    background-color: cadetblue;
+
+    box-shadow: 0 15px 40px rgba(95, 158, 160, 0.4);
+}
+
+.hero-imagem img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+}
+
+
+/* BOTÃO */
+
+.botao {
+    display: inline-block;
+
+    margin-top: 20px;
+
+    padding: 15px 28px;
+
+    border-radius: 6px;
+
+    background-color: cadetblue;
+    color: white;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.botao:hover {
+    transform: translateY(-3px);
+
+    box-shadow: 0 8px 20px rgba(95, 158, 160, 0.35);
+}
+
+
+/* =====================================
+   DIFERENCIAIS
+===================================== */
+
+.diferenciais {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+
+    padding: 35px 8%;
+
+    background-color: cadetblue;
+    color: white;
+}
+
+.diferencial {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.diferencial > span {
+    font-size: 35px;
+}
+
+.diferencial h3 {
+    margin: 0 0 5px;
+}
+
+.diferencial p {
+    margin: 0;
+
+    color: aliceblue;
+}
+
+
+/* =====================================
+   SEÇÕES
+===================================== */
+
+.secao {
+    padding: 90px 8%;
+
+    text-align: center;
+}
+
+.secao h2,
+.sobre h2,
+.agendamento h2 {
+    margin: 12px 0;
+
+    font-size: 36px;
+    color: #333;
+}
+
+.descricao {
+    color: #666;
+    margin-bottom: 45px;
+}
+
+
+/* =====================================
+   TRATAMENTOS
+===================================== */
+
+.tratamentos-container {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 22px;
+
+    max-width: 1200px;
+
+    margin: auto;
+}
+
+.tratamento {
+    padding: 30px 22px;
+
+    background-color: white;
+
+    border-radius: 10px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+
+    text-align: left;
+
+    transition: 0.3s;
+}
+
+.tratamento:hover {
+    transform: translateY(-8px);
+
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
+}
+
+.tratamento > span {
+    font-size: 42px;
+}
+
+.tratamento h3 {
+    color: cadetblue;
+    font-size: 21px;
+}
+
+.tratamento p {
+    color: #666;
+    line-height: 1.6;
+}
+
+.tratamento a {
+    color: cadetblue;
+    font-weight: bold;
+}
+
+
+/* =====================================
+   SOBRE
+===================================== */
+
+.sobre {
+    display: flex;
+    align-items: center;
+    gap: 70px;
+
+    padding: 90px 8%;
+
+    background-color: white;
+}
+
+.sobre-imagem {
+    min-width: 350px;
+    height: 350px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 15px;
+
+    background-color: aliceblue;
+
+    font-size: 130px;
+
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+}
+
+.sobre-texto {
+    max-width: 600px;
+}
+
+.sobre-texto h2 {
+    font-size: 38px;
+}
+
+.sobre-texto p {
+    color: #666;
+
+    line-height: 1.8;
+}
+
+
+/* =====================================
+   AGENDAMENTO
+===================================== */
+
+.agendamento {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 30px;
+
+    padding: 70px 8%;
+
+    background-color: cadetblue;
+
+    color: white;
+}
+
+.agendamento h2 {
+    color: white;
+}
+
+.agendamento p {
+    color: aliceblue;
+}
+
+.agendamento .pequeno-titulo {
+    color: white;
+}
+
+.botao-claro {
+    background-color: white;
+    color: cadetblue;
+
+    white-space: nowrap;
+}
+
+
+/* =====================================
+   CONTATO
+===================================== */
+
+.contato {
+    background-color: aliceblue;
+}
+
+.contato-container {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+
+    max-width: 900px;
+
+    margin: auto;
+}
+
+.contato-card {
+    padding: 30px;
+
+    background-color: white;
+
+    border-radius: 10px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.contato-card > span {
+    font-size: 35px;
+}
+
+.contato-card h3 {
+    color: cadetblue;
+}
+
+.contato-card p {
+    color: #666;
+}
+
+
+/* =====================================
+   RODAPÉ
+===================================== */
+
+footer {
+    padding: 40px 8%;
+
+    background-color: #333;
+
+    color: white;
+
+    text-align: center;
+}
+
+.footer-logo {
+    color: aliceblue;
+
+    font-size: 20px;
+    font-weight: bold;
+}
+
+footer p {
+    color: #ccc;
+}
+
+.linha {
+    height: 1px;
+
+    margin: 25px 0;
+
+    background-color: #666;
+}
+
+.copyright {
+    font-size: 13px;
+}
+
+
+/* =====================================
+   ANIMAÇÃO
+===================================== */
+
+.animar {
+    opacity: 0;
+    transform: translateY(30px);
+
+    transition: 0.7s;
+}
+
+.animar.mostrar {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* =====================================
+   CELULAR
+===================================== */
+
+@media (max-width: 800px) {
+
+    /* CABEÇALHO */
+
+    .cabeçalho {
+        padding: 15px 20px;
+    }
+
+    .menu-btn {
+        display: block;
+
+        
+    }
+
+
+    /* MENU */
+
+    .menu {
+        display: none;
+
+        position: absolute;
+
+        top: 100%;
+        right: 0;
+
+        width: 230px;
+
+        background-color: white;
+
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.12);
+    }
+
+    .menu.ativo {
+        display: block;
+    }
+
+    .menu ul {
+        display: flex;
+
+        flex-direction: column;
+
+        gap: 0;
+    }
+
+    .menu li {
+        width: 100%;
+
+        border-bottom: 1px solid #eee;
+    }
+
+    .menu a {
+        display: block;
+
+        padding: 16px 20px;
+    }
+
+
+    /* HERO */
+
+    .hero {
+        flex-direction: column;
+
+        text-align: center;
+
+        padding: 55px 20px;
+    }
+
+    .hero h1 {
+        font-size: 35px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .hero-imagem {
+        width: 220px;
+        height: 220px;
+
+        margin-top: 40px;
+
+        font-size: 90px;
+    }
+
+
+    /* DIFERENCIAIS */
+
+    .diferenciais {
+        grid-template-columns: 1fr;
+
+        padding: 35px 25px;
+    }
+
+
+    /* TRATAMENTOS */
+
+    .tratamentos-container {
+        grid-template-columns: 1fr;
+
+        max-width: 350px;
+    }
+
+
+    /* SOBRE */
+
+    .sobre {
+        flex-direction: column;
+
+        padding: 60px 20px;
+
+        gap: 40px;
+    }
+
+    .sobre-imagem {
+        min-width: 0;
+
+        width: 100%;
+        max-width: 350px;
+
+        height: 280px;
+    }
+
+
+    /* SEÇÕES */
+
+    .secao {
+        padding: 60px 20px;
+    }
+
+    .secao h2,
+    .sobre h2,
+    .agendamento h2 {
+        font-size: 29px;
+    }
+
+
+    /* AGENDAMENTO */
+
+    .agendamento {
+        flex-direction: column;
+
+        text-align: center;
+
+        padding: 60px 20px;
+    }
+
+
+    /* CONTATO */
+
+    .contato-container {
+        grid-template-columns: 1fr;
+
+        max-width: 350px;
+    }
+
+}
