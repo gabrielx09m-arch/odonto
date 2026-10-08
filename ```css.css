@@ -666,3 +666,150 @@ footer p {
     }
 
 }
+/* =====================================
+   BRASILAPI - CONSULTA DE CEP
+===================================== */
+
+.form-api {
+    width: 100%;
+    max-width: 420px;
+
+    padding: 25px;
+
+    background-color: white;
+
+    border-radius: 15px;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+
+    text-align: center;
+}
+
+.form-api h2 {
+    margin-top: 0;
+
+    color: cadetblue;
+
+    font-size: 24px;
+}
+
+.form-api p {
+    color: #666;
+
+    line-height: 1.5;
+}
+
+
+/* FORMULÁRIO */
+
+#formCep {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+
+    margin-top: 20px;
+}
+
+
+/* CAMPOS */
+
+#formCep input,
+#resultadoCep input {
+    width: 100%;
+
+    padding: 13px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 8px;
+
+    outline: none;
+
+    font-size: 15px;
+
+    color: #333;
+
+    background-color: #fafafa;
+
+    transition: 0.3s;
+}
+
+#formCep input:focus {
+    border-color: cadetblue;
+
+    background-color: white;
+
+    box-shadow:
+        0 0 0 3px
+        rgba(95, 158, 160, 0.15);
+}
+
+
+/* BOTÃO */
+
+#formCep button {
+    padding: 13px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background-color: cadetblue;
+
+    color: white;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+#formCep button:hover {
+    background-color: #4f8f91;
+
+    transform: translateY(-2px);
+}
+
+
+/* RESULTADO */
+
+#resultadoCep {
+    display: none;
+
+    margin-top: 15px;
+
+    gap: 10px;
+
+    flex-direction: column;
+}
+
+#resultadoCep.mostrar {
+    display: flex;
+}
+
+
+/* CELULAR */
+
+@media (max-width: 800px) {
+
+    .form-api {
+        width: 100%;
+
+        max-width: 350px;
+
+        margin-top: 35px;
+
+        padding: 20px;
+    }
+
+    #formCep input,
+    #resultadoCep input {
+        font-size: 16px;
+    }
+
+}
